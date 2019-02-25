@@ -1,0 +1,84 @@
+.dialog-header {
+  .title h1 {
+    flex-grow: 1;
+    display: inline;
+  }
+
+  .close-btn {
+    flex-grow: 1;
+    float: right;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+}
+
+mat-card {
+  &.album-conatiner {
+    mat-card-title {
+      font-weight: 400;
+      height: 48px;
+      min-height: 48px;
+      text-overflow: ellipsis;
+      word-break: break-all;
+      overflow: hidden;
+    }
+
+    button {
+      width: 100%;
+    }
+
+    float: left;
+    width: 29%;
+    margin: 6px;
+    min-height: 92px;
+    height: 92px;
+    overflow: hidden;
+  }
+
+  &.photo-container {
+    float: left;
+    width: 29%;
+    margin: 6px;
+
+    &.mat-card {
+      mat-card-title {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 2px;
+        padding-left: 9px;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        margin: 0 !important;
+        max-height: 50px;
+        min-height: 50px;
+      }
+
+      .main-photo {
+        height: 250px;
+      }
+
+      .thumbnail {
+        height: inherit;
+        border-radius: 28px;
+      }
+    }
+  }
+}
+
+.loader {
+  margin: 0 auto;
+  display: table;
+}
+
+.mat-horizontal-stepper-header-container {
+  display: none !important;
+}
+
+.breadscrumb {
+  display: flex;
+  cursor: pointer;
+}
+
+.mat-horizontal-content-container {
+  padding: 0 !important;
+}
